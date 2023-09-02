@@ -1,0 +1,18 @@
+*{
+  margin: 0%;
+  padding: 0%;
+}
+
+.border_radius1{
+  border-radius:30px !important;
+  margin-top:20px;
+}
+#colortext{
+
+  background: -webkit-linear-gradient(55deg, #E21143, #f59402);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
+
+  
+}
