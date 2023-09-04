@@ -3,7 +3,8 @@ import { useDispatch, useSelector } from 'react-redux'
 import Productitem from './Productitem'
 import { addItem, modifyItem, removeItem } from '../REDUX/reducer/Cart';
 import { useNavigate } from 'react-router-dom';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
   
 
 function Cart() {
@@ -33,6 +34,7 @@ function Cart() {
         dispatch(removeItem(item))
     // }
     
+   
    
     }
     return (

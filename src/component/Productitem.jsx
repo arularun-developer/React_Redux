@@ -1,46 +1,49 @@
-import React from 'react'
+import React from 'react';
+
 
 
 function Productitem(props) {
-
-
+ 
+ 
 
     return (
         <>
-    
-            <div className='container'>
+
+         <div className='container'>
                 <div className='mt-2 text-center'>
                     <img src={props.thumbnail} height={200} width={280} alt={props.title} className='border_radius' />
                 </div>
 
                 <div className='card-title text-center mt-2'>
                     <strong className='me-3'>{props.title}</strong>
-                    <br/>
+                    <br />
                     <strong className='text-center me-3'>Price:${props.price}</strong>
-                    <br/>
+                    <br />
                     <strong className='me-3'>Discount: {props.discountPercentage}%</strong>
-                    <br/>
+                    <br />
                     <strong className='me-3'>Rating: {props.rating}</strong>
                 </div>
                 <div className='text-center'>
-                
-               
-                <button className='btn btn-success me-2' onClick={props.incrementitem}>+</button>{props.count}
-                <button className='btn btn-success ms-2' onClick={props.decrementitem}>-</button>
-                <br/>
-                <button className='btn btn-danger ms-1 mt-1'onClick={props.removeitem}>REMOVE</button>
-                <br></br>
 
-                <strong>Total Amount:{props.price}</strong>
+
+                    <button className='btn btn-success me-2' onClick={props.incrementitem}>+</button>{props.count}
+                    <button className='btn btn-success ms-2' onClick={props.decrementitem}>-</button>
+
+                    <button className='btn btn-danger  ms-3' onClick={props.removeitem}>
+                        <i className="fa fa-trash-o" aria-hidden="true"></i>
+                    </button>
+                    <br></br>
+
+                    <strong>Total Amount:{props.price}</strong>
                 </div>
                 
+
                 <hr></hr>
+            </div> 
 
 
 
 
-
-            </div>
         </>
 
     )
